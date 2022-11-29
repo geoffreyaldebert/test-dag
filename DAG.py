@@ -4,7 +4,7 @@ from airflow.contrib.operators.ssh_operator import SSHOperator
 from airflow.utils.dates import days_ago
 
 with DAG(
-    dag_id='sirene-geocodage',
+    dag_id='test-dag',
     schedule_interval='48 7 1 * *',
     start_date=days_ago(10),
     tags=['etalab', 'insee', 'sirene', 'monthly', 'geocodage'],
